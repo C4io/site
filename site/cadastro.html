@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<link rel="icon" type="image/icon" href="img/icone.png">
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		.entrada{
+			margin-left: 30px;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Cadastre-se</legend>
+		<form method="POST">
+			<h5>Cadastre-se para entrar no site</h5>
+
+			<label>Nome: *</label><br>
+				<input class="entrada" type="text" required name="nome"><br>
+
+			<label>Sobrenome: *</label><br>
+				<input class="entrada" type="text" required name="sobrenome"><br>
+
+			<label>Email:</label><br>
+				<input class="entrada" type="email" name="email" placeholder="nome@dominio.com"><br>
+
+			<label>Senha:</label><br>
+				<input class="entrada" type="password" name="senha"><br>
+
+			<label>Sexo: *</label><br>
+				<input class="entrada" type="radio" required name="sexo">Masculino<br>
+				<input class="entrada" type="radio" required name="sexo">Feminino<br>
+				<input class="entrada" type="radio" required name="sexo">Outro<br><br>
+
+			<label>Data de Nascimento: *</label><br>
+				<input  class="entrada" type="date" required name="data"><br>
+
+			<label>Telefone:</label><br>
+				<input class="entrada" type="tel"  name="telefone" min="900000001" max="999999999"><br>
+
+			<label>Cidade: *</label><br>
+				<input class="entrada" type="text" required name="cidade"><br>
+
+			<label>Bairro: *</label><br>
+				<input class="entrada" type="text" required name="bairro"><br><br>
+
+			<label>O que você sabe de grafite?</label><br>
+				<textarea class="entrada" name="texto" cols="50" rows="5"></textarea><br>
+
+			<label>Que tipos de arte você gosta?</label><br>
+				<input class="entrada" type="checkbox" name="tipo_de_arte">Grafite<br>
+				<input class="entrada" type="checkbox" name="tipo_de_arte">Desenho<br>
+				<input class="entrada" type="checkbox" name="tipo_de_arte">Música<br>
+				<input class="entrada" type="checkbox" name="tipo_de_arte">Pintura<br>
+				<input class="entrada" type="checkbox" name="tipo_de_arte">Artesanato<br>
+				<input class="entrada" type="checkbox" name="tipo_de_arte">Teatro<br>
+				<label>Outros:</label><br>
+					<input class="entrada" type="text" name="tipo_de_arte"><br><br>
+
+			<!--Input's de enviar e apagar-->
+			<input class="entrada" type="reset" name="apagar" value="Apagar">
+			<input class="entrada" type="submit" name="enviar" value="Enviar"><br><br>
+
+			<h6>*: Campos obrigatórios</h6>
+		</form>
+	</fieldset>
+</body>
+</html>

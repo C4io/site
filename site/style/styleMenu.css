@@ -1,0 +1,83 @@
+@font-face{
+	font-family: titulo_h;
+	src:url("../style/fontes/UpstairsCVJMgraff.ttf");
+}
+
+@font-face{
+	font-family: top;
+	src:url("../style/fontes/MopTop.ttf");
+}
+
+.menu{
+	background-color: #00BFFF;
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto 0 auto;
+}
+
+.menu ul{
+	font-family: arial; /*mude a fonte do menu*/
+	margin: auto;
+	list-style-type: none;
+	font-size: 15px;
+}
+
+.menu ul li{
+	float: left;
+	position: relative;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	float: left;
+	color: #FFFAFA;
+	display: block;
+	width: auto;
+	line-height: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.menu ul li a:hover{
+	background: #6A5ACD;
+	color: #FFFAFA;
+}
+
+.menu ul li ul{
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: -40px;
+	line-height: 50px;
+	height: 50px;
+	float: left;
+	width: 150px;
+}
+
+.menu ul li:hover ul{
+	display: block;
+	line-height: 50px;
+	height: 50px;
+	float: center;
+	width: 150px;
+}
+
+.menu ul li ul li a{
+	background: #00BFFF;
+	color: #FFFAFA;
+	line-height: 50px;
+	height: 50px;
+	margin: 0;
+	width: 150px;
+}
+
+.menu ul li:hover{
+	background: #6A5ACD;
+	color: #00FFFF;
+}
+
+.menu ul li ul a:hover{
+	background: #6A5ACD;
+	color:  #FFFAFA;
+}
